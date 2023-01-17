@@ -30,7 +30,7 @@ public class Granjero extends Thread{
                 String verduraAProducir = this.obtenerVerduraRandom();
                 long tiempoCrecimiento = this.obtenerTiempoCrecimiento();
                 Thread.sleep(tiempoCrecimiento * 1000);
-                this.huerto.anadirVerdura(this.nombreGranjero, verduraAProducir);
+                this.huerto.anadirVerdura(nombreGranjero, verduraAProducir);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
